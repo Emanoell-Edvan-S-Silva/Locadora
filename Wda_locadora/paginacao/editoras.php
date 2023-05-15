@@ -7,6 +7,7 @@ include '../funcoes/protecao.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css-manual/pag.css">
     <link rel="shortcut icon" href="./imagens/book.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -21,7 +22,7 @@ include '../funcoes/protecao.php';
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" style="margin-left: 20% ;" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" id="barra" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="inicio.php">Inicio</a>
         </li>

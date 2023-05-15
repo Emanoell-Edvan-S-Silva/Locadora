@@ -44,6 +44,7 @@ $row4 = $cont2->fetch_array();
 
 ?>
 <style>
+
 #customers {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
@@ -70,6 +71,7 @@ $row4 = $cont2->fetch_array();
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
+
 }
 </style>
 <!DOCTYPE html>
@@ -78,6 +80,7 @@ $row4 = $cont2->fetch_array();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css-manual/pag.css">
     <link rel="shortcut icon" href="./imagens/book.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -92,7 +95,7 @@ $row4 = $cont2->fetch_array();
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" style="margin-left: 20% ;" id="navbarScroll">
-      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" id="barra" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="inicio.php">Inicio</a>
         </li>
@@ -121,6 +124,30 @@ $row4 = $cont2->fetch_array();
 
 <h3 style="margin-top:1%;" class="text-center">DashBoard</h3>
 <br>
+
+<div class="container-fluid" id="ini">
+<table style="margin-left: 43%;margin-top: 10%;" id="customers" width=300 height=100>
+    <tr>
+        <th>&nbsp;</th>
+        <th>Quantidades</th>
+    </tr>
+    <tr>
+        <td>Total Alugados</td>
+        <td><?php echo $row2['total']; ?></td>
+    </tr>
+    <tr>
+        <td>Alugados agora</td>
+        <td><?php echo $row['qtd']; ?></td>
+    </tr>
+    <tr>
+        <td>Alugueis no Prazo</td>
+        <td style="color: green;"><?php echo $row3['alug']; ?></td>
+    </tr>
+    <tr>
+        <td>Alugueis atrasados</td>
+        <td style="color: red;"><?php echo $row4['atraso']; ?></td>
+    </tr>
+</table>
 <div style="margin-left: 16%;">
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
@@ -156,31 +183,10 @@ $row4 = $cont2->fetch_array();
 <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
 </div>
 
-<div class="">
-<table style="margin-left: 43%;margin-top: 10%;" id="customers" width=300 height=100>
-    <tr>
-        <th>&nbsp;</th>
-        <th>Quantidades</th>
-    </tr>
-    <tr>
-        <td>Total Alugados</td>
-        <td><?php echo $row2['total']; ?></td>
-    </tr>
-    <tr>
-        <td>Alugados agora</td>
-        <td><?php echo $row['qtd']; ?></td>
-    </tr>
-    <tr>
-        <td>Alugueis no Prazo</td>
-        <td style="color: green;"><?php echo $row3['alug']; ?></td>
-    </tr>
-    <tr>
-        <td>Alugueis atrasados</td>
-        <td style="color: red;"><?php echo $row4['atraso']; ?></td>
-    </tr>
-</table>
-</div>
+
+
 <div style="margin-left: 43%;margin-top: 20%;" ></div>
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -43,7 +43,15 @@
   
 </nav>
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!-- <img class="d-block w-100" src="./imagens/teste/banner_top_v3.jpg" alt="Primeiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./imagens/teste/img1.2.jpg" alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="./imagens/teste/img1.3.jpg" alt="Terceiro Slide">
+    </div> -->
