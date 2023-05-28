@@ -1,0 +1,58 @@
+#tsup{
+    float: right;
+    border-collapse: separate; 
+    border-spacing: 10px;
+    margin: 0 0 0 10px;
+}
+#tabela{
+    margin-top: 20px;
+    overflow-x: hidden;
+}
+#tinf{
+  background: white;
+  
+}
+@media only screen and (max-width:800px) {
+    #tabela{
+        border-collapse: collapse;
+        background: white;
+        width: 100%;
+    }
+    #tsup{
+      border-collapse: separate; 
+      border-spacing: 10px;
+      margin: 0 0 0 10px;
+    }
+    #tinf{
+      border-collapse: collapse;
+      background: white;
+      color: black;
+    }
+    #tinf tbody tr:nth-of-type(2n){
+      background: whitesmoke;
+    }
+    thead{
+      margin-left: -100px;
+      text-align: left;
+    }
+    #cabeca{
+        display: none;
+    }
+    #tab td{
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: 15ch auto;
+        padding: 0.3rem 1rem;
+    }
+    #tab td:first-child{
+      padding-top: 2rem;
+    }
+    #tab td:last-child{
+      padding-bottom: 2rem;
+    }
+    #tab td::before{
+        content: attr(data-cell) " ";
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
